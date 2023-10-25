@@ -224,7 +224,14 @@ Some of them are generic and others are specific to a technology. To mention a f
 <p>Sending a request to <code>/actuator/health</code> endpoint returns an agrgegated result of all registered health indicators.</p>
 </div>
 <div class="paragraph">
-<p>Unresolved include directive in modules/ROOT/pages/04-actuators.adoc - include::partial$package_run.adoc[]</p>
+<p>We can build the project and run it:</p>
+</div>
+<div class="listingblock console-input">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./mvnw package -DskipTests
+
+java -jar target/hello-kubernetes-0.0.1-SNAPSHOT.jar</code></pre>
+</div>
 </div>
 <div class="listingblock console-input">
 <div class="content">
@@ -270,7 +277,14 @@ public class LuckyHealthIndicator implements HealthIndicator {
 </div>
 </div>
 <div class="paragraph">
-<p>Unresolved include directive in modules/ROOT/pages/04-actuators.adoc - include::partial$package_run.adoc[]</p>
+<p>We can build the project and run it:</p>
+</div>
+<div class="listingblock console-input">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./mvnw package -DskipTests
+
+java -jar target/hello-kubernetes-0.0.1-SNAPSHOT.jar</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p>Now depending on the minute you do the request, you may receive an <code>UP</code> or <code>DOWN</code> as a result:</p>
@@ -317,7 +331,14 @@ Open <code>src/main/resources/application.properties</code> file and add the fol
 </div>
 </div>
 <div class="paragraph">
-<p>Unresolved include directive in modules/ROOT/pages/04-actuators.adoc - include::partial$package_run.adoc[]</p>
+<p>We can build the project and run it:</p>
+</div>
+<div class="listingblock console-input">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./mvnw package -DskipTests
+
+java -jar target/hello-kubernetes-0.0.1-SNAPSHOT.jar</code></pre>
+</div>
 </div>
 <div class="listingblock console-input">
 <div class="content">
@@ -395,7 +416,14 @@ For this tutorial, we are going to use Prometheus as a metrics format.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Unresolved include directive in modules/ROOT/pages/04-actuators.adoc - include::partial$package_run.adoc[]</p>
+<p>We can build the project and run it:</p>
+</div>
+<div class="listingblock console-input">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./mvnw package -DskipTests
+
+java -jar target/hello-kubernetes-0.0.1-SNAPSHOT.jar</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p>Now, two new endpoints related to monitoring are available:</p>
@@ -510,7 +538,14 @@ public class HelloController {
 </table>
 </div>
 <div class="paragraph">
-<p>Unresolved include directive in modules/ROOT/pages/04-actuators.adoc - include::partial$package_run.adoc[]</p>
+<p>We can build the project and run it:</p>
+</div>
+<div class="listingblock console-input">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">./mvnw package -DskipTests
+
+java -jar target/hello-kubernetes-0.0.1-SNAPSHOT.jar</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p>Then make a request to <code>/hello/Alex</code> and then get the metrics (optionally filtering by <code>names.size</code> key used to register the gauge):</p>
